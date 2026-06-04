@@ -41,7 +41,7 @@ This table lists the identified vulernabilites by their STIG ID, a summary of th
 <tr>
 <td>WN11-UR-000010</td>
 <td>The 'Access this computer from the network' user right must only be assigned to the Administrators and Remote Desktop Users groups.</td>
-<td><a href="docs/TEST.md">Remote Access</a></td>
+<td><a href="/STIGGUIDES/secureRemoteAccess.md">Remote Access</a></td>
 </tr>
 
 <tr>
