@@ -11,7 +11,7 @@ This project showcases the process of finding and remediating vulnerabiltes. DIS
 6. [Ongoing Vulnerability Management](#ongoing-vulnerability-management)<br>
 
 <h2>Project Overview</h2>
-- Purpose: Demonstrate the process of scanning a Windows 11 VM with Nessus using a template, indentifying STIG findings, remediating them with Powershell and manually, finally verifying the vulnerability has been remediated.
+- Purpose: Demonstrate the process of scanning a Windows 11 VM with Nessus using a template, indentifying STIG findings, remediating them with Powershell and manually, finally verifying the vulnerability has been remediated.<br>
 - Scope: Windows 11 VM
 
 <h2>Remediation Workflow</h2>
@@ -30,7 +30,7 @@ This project showcases the process of finding and remediating vulnerabiltes. DIS
 <h2>Initial Nessus Scan Results</h2>
 
 ##<h2>Implemented STIG Controls</h2>
-This table lists the identified vulernabilites by their STIG ID, a summary of the vulnerabilit and a link to the documentation.
+This table lists the identified vulernabilites by their STIG ID, a summary of the vulnerabilities, and a link to the documentation.
 <table>
 <tr>
 <th>STIG ID(s)</th>
