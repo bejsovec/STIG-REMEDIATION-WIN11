@@ -1,7 +1,7 @@
 
 <h1>Event Log Size Remediation</h1>
 <b>STIG ID:</b> WN11-UR-000010<br>
-<b>Description:</b>The 'Access this computer from the network' user right must only be assigned to the Administrators and Remote Desktop Users groups.
+<b>Description:</b> The 'Access this computer from the network' user right must only be assigned to the Administrators and Remote Desktop Users groups.
 
 <h2>1. Vulnerability</h2>
 <b>Issue</b><br>
@@ -13,7 +13,7 @@ Unauthorized network access increases the risk of lateral movement and data expo
 <h2>2. Remediation</h2>
 
 <b>Manual Remediation </b><br>
-Manual remediation to be completed by editing local policy. In an enterprise environment the same thing would best be accomplished using group policy.<br>
+Manual remediation to be completed by editing local policy. In an enterprise environment the same thing would best be accomplished using group policy.<br><br>
 Navigate to Local Computer Policy >> Computer Configuration >> Windows Settings >> Security Settings >> Local Policies >> User Rights Assignment.<br>
 Select the policy "Access this computer from the network"
 1. "Add User or Group" to add Administrators and Remote Desktop Users
@@ -22,6 +22,7 @@ Select the policy "Access this computer from the network"
 <img src = "https://github.com/bejsovec/STIG-REMEDIATION-WIN11/blob/main/IMAGES/secureRemoteGPO.PNG">
 
 <b>Automated Remediation (PowerShell Script)</b>
+Run the following in PowerShell as an Administrator. This will create a configuration file that allows only Administrators and Authenticated users to access this computer remotely.
 ```
 $policyPath = "$env:TEMP\policy.inf"
 @"
@@ -32,7 +33,7 @@ signature="`$CHICAGO`$"
 SeNetworkLogonRight = *S-1-5-32-544,*S-1-5-32-555
 "@ | Out-File -FilePath $policyPath -Encoding ASCII
 ```
-Apply the configuration file.
+After creating the configuration file, it must be applied.
 ```
 secedit /configure /db "$env:TEMP\secpol.sdb" /cfg $policyPath /areas USER_RIGHTS
 ```
@@ -53,14 +54,14 @@ S-1-5-32-555 = Remote Desktop Users
 
 
 <h2>4. Rollback Instructions (If Needed)</h2>
-In order to rollback these changes, you would have first needed to check the original vaules. In Windows 11, the deafult values for the policy allow Administrators and Authenticated Users access.
-<b>Manual Remediation Rollback</b><br>
-Navigate back to Local Computer Policy >> Computer Configuration >> Windows Settings >> Security Settings >> Local Policies >> User Rights Assignment in local policy.
-Select the policy "Access this computer from the network"
-1. "Add User or Group" to add Administrators and Authenticated Users
+In order to rollback these changes, you would have first needed to check the original vaules. In Windows 11, the deafult values for the policy allow Administrators and Authenticated Users access.<br>
+<br><b>Manual Remediation Rollback</b><br>
+Navigate back to Local Computer Policy >> Computer Configuration >> Windows Settings >> Security Settings >> Local Policies >> User Rights Assignment in local policy.<br>
+Select the policy "Access this computer from the network"<br>
+1. "Add User or Group" to add Administrators and Authenticated Users<br>
 2. Select any other users or groups and then click remove.<br>
 
-<b>Automated Remediation (PowerShell Script)Rollback<b>
+<br><b>Automated Remediation (PowerShell Script)Rollback</b><br>
 Run the following in PowerShell as an Administrator:
 ```
 $cfg = @"
@@ -75,11 +76,12 @@ Revision=1
 $cfg | Out-File -FilePath C:\rollback.cfg -Encoding Unicode
 ```
 S-1-5-32-544 and S-1-5-11 are the SIDs for Administrators and Authenticated Users.<br>
+
 Expected Result:
 ```
 secedit /configure /db C:\Windows\security\local.sdb /cfg C:\rollback.cfg /areas USER_RIGHTS /quiet
 ```
 
 <h2>5. Final Results</h2>
-<img src = "/WN11-UR-000010PASS.PNG">
+<img src = "/IMAGES/WN11-UR-000010PASS.PNG">
 The Nessus scan shows that the vulnerability has been remediated. Now only user accounts that are in the Administrators or Remote Desktop Users will be able to remotely login to the system.
