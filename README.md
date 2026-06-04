@@ -83,20 +83,20 @@ This table lists the identified vulernabilites by their STIG ID, a summary of th
 <tr>
 <td>WN11-CC-000150</td>
 <td>The user must be prompted for a password on resume from sleep (plugged in).</td>
-<td><a href="docs/TEST.md">Remote Access</a></td>
+<td><a href="docs/TEST.md">ToDo</a></td>
 </tr>
 
 <tr>
 <td>WN11-AU-000588</td>
 <td>Windows 11 must be configured to audit sensitive privilege use failures.</td>
-<td><a href="docs/TEST.md">Remote Access</a></td>
+<td><a href="docs/TEST.md">ToDo</a></td>
 </tr>
 
 
 <tr>
 <td>WN11-AC-000030</td>
 <td>The minimum password age must be configured to at least 1 day.</td>
-<td><a href="docs/TEST.md">Remote Access</a></td>
+<td><a href="docs/TEST.md">ToDo</a></td>
 </tr>
 
 </table>
