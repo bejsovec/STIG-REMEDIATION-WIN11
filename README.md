@@ -25,7 +25,7 @@ This project showcases the process of finding and remediating vulnerabiltes. DIS
 &emsp;-If <b>not successfully</b> remediated -> returnd to step 3 and re-evaluate approach.<br>
 7. <b>Document the Remediation:</b>
    
-<img src = "https://github.com/bejsovec/STIG-REMEDIATION-WIN11/blob/main/DISASTIGFlow.PNG">
+<img src = "IMAGES/DISASTIGFlow.PNG">
 
 <h2>Initial Nessus Scan Results</h2>
 
