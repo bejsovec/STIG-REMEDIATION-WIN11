@@ -1,7 +1,7 @@
 <h1>Windows 11 STIG Remediation Repository </h1>
+This project showcases the process of finding and remediating vulnerabiltes. DISA STIG in this case refers to the Security Technical Implementation Guides published by the Defense Information Systems Agency (DISA). The guides can be used to configure devices (Windows OS, web servers, routers, etc.) to minimize the attack surface.
 
-
-##<h2>Table of Contents</h2>
+<h2>Table of Contents</h2>
 1. [Project Overview](#project-overview)
 2. [Remediation Workflow](#remediation-workflow)
 3. [Initial Nessus Scan Results](#initial-scan-results)
@@ -10,14 +10,27 @@
 6. [Post-Remediation Testing](#post-remediation-testing)
 6. [Ongoing Vulnerability Management](#ongoing-vulnerability-management)
 
-##<h2>Project Overview</h2>
+<h2>Project Overview</h2>
+- Purpose: Demonstrate the process of scanning a Windows 11 VM with Nessus using a template, indentifying STIG findings, remediating them with Powershell and manually, finally verifying the vulnerability has been remediated.
+- Scope: Windows 11 VM
 
-##<h2>Remediation Workflow</h2>
+<h2>Remediation Workflow</h2>
 
-##<h2>Initial Nessus Scan Results</h2>
+1. <b>Create the Nessus Scan:</b> Select the template, configure the target scope (Windows 11 VM for this project), and then scan the device(s).<br>
+2. <b>Identify Vulnerabilites:</b> For this project 10 vulnerabilies are identified for remediation.<br>
+3. <b>Reference DISA STIG documentation:</b><br>
+4. <b>Remediate:</b><br>
+5. <b>Rescan to Verify:</b>Run a scan on the device that the changes were applied to and confirm the vulnerabilites have been remediated.<br>
+&emsp;-If remediated <b>successfully</b> -> proceed to Step 6.<br>
+&emsp;-If <b>not successfully</b> remediated -> returnd to step 3 and re-evaluate approach.<br>
+7. <b>Document the Remediation:</b>
+   
+<img src = "https://github.com/bejsovec/STIG-REMEDIATION-WIN11/blob/main/DISASTIGFlow.PNG">
+
+<h2>Initial Nessus Scan Results</h2>
 
 ##<h2>Implemented STIG Controls</h2>
-
+This table lists the identified vulernabilites by their STIG ID, a summary of the vulnerabilit and a link to the documentation.
 <table>
 <tr>
 <th>STIG ID(s)</th>
