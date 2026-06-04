@@ -47,37 +47,37 @@ This table lists the identified vulernabilites by their STIG ID, a summary of th
 <tr>
 <td>WN11-00-000030</td>
 <td>Windows 11 information systems must use BitLocker to encrypt all disks to protect the confidentiality and integrity of all information at rest.</td>
-<td><a href="docs/TEST.md">Remote Access</a></td>
+<td><a href="docs/TEST.md">ToDo</a></td>
 </tr>
 
 <tr>
 <td>WN11-00-000135</td>
 <td>A host-based firewall must be installed and enabled on the system.</td>
-<td><a href="docs/TEST.md">Remote Access</a></td>
+<td><a href="docs/TEST.md">ToDo</a></td>
 </tr>
 
 <tr>
 <td>WN11-AU-000500</td>
 <td>The Application event log size must be configured to 32768 KB or greater.</td>
-<td><a href="docs/TEST.md">Remote Access</a></td>
+<td><a href="docs/TEST.md">ToDo</a></td>
 </tr>
 
 <tr>
 <td>WN11-AU-000054</td>
 <td>The system must be configured to audit Logon/Logoff - Account Lockout failures.</td>
-<td><a href="docs/TEST.md">Remote Access</a></td>
+<td><a href="docs/TEST.md">ToDo</a></td>
 </tr>
 
 <tr>
 <td>WN11-AC-000010</td>
 <td>The number of allowed bad logon attempts must be configured to three or less.</td>
-<td><a href="docs/TEST.md">Remote Access</a></td>
+<td><a href="/STIGGUIDES/accountLockoutThreshold.md">Lockout Threshold</a></td>
 </tr>
 
 <tr>
 <td>WN11-AC-000035</td>
 <td>Passwords must, at a minimum, be 14 characters.</td>
-<td><a href="docs/TEST.md">Remote Access</a></td>
+<td><a href="docs/TEST.md">ToDo</a></td>
 </tr>
 
 <tr>
