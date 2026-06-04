@@ -2,13 +2,13 @@
 This project showcases the process of finding and remediating vulnerabiltes. DISA STIG in this case refers to the Security Technical Implementation Guides published by the Defense Information Systems Agency (DISA). The guides can be used to configure devices (Windows OS, web servers, routers, etc.) to minimize the attack surface.
 
 <h2>Table of Contents</h2>
-1. [Project Overview](#project-overview)
-2. [Remediation Workflow](#remediation-workflow)
-3. [Initial Nessus Scan Results](#initial-scan-results)
-4. [Implemented STIG Controls](#implemented-stig-controls)
-5. [Remediation Script Repository](#remediation-script-repository)
-6. [Post-Remediation Testing](#post-remediation-testing)
-6. [Ongoing Vulnerability Management](#ongoing-vulnerability-management)
+1. [Project Overview](#project-overview)<br>
+2. [Remediation Workflow](#remediation-workflow)<br>
+3. [Initial Nessus Scan Results](#initial-scan-results)<br>
+4. [Implemented STIG Controls](#implemented-stig-controls)<br>
+5. [Remediation Script Repository](#remediation-script-repository)<br>
+6. [Post-Remediation Testing](#post-remediation-testing)<br>
+6. [Ongoing Vulnerability Management](#ongoing-vulnerability-management)<br>
 
 <h2>Project Overview</h2>
 - Purpose: Demonstrate the process of scanning a Windows 11 VM with Nessus using a template, indentifying STIG findings, remediating them with Powershell and manually, finally verifying the vulnerability has been remediated.
