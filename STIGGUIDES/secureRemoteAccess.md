@@ -54,8 +54,11 @@ S-1-5-32-555 = Remote Desktop Users
 
 <h2>4. Rollback Instructions (If Needed)</h2>
 In order to rollback these changes, you would have first needed to check the original vaules. In Windows 11, the deafult values for the policy allow Administrators and Authenticated Users access.
-<b>Manual Remediation Rollback<b>
-Navigate back to Local Computer Policy >> Computer Configuration >> Windows Settings >> Security Settings >> Local Policies >> User Rights Assignment in local policy.<br>
+<b>Manual Remediation Rollback</b><br>
+Navigate back to Local Computer Policy >> Computer Configuration >> Windows Settings >> Security Settings >> Local Policies >> User Rights Assignment in local policy.
+Select the policy "Access this computer from the network"
+1. "Add User or Group" to add Administrators and Authenticated Users
+2. Select any other users or groups and then click remove.<br>
 
 <b>Automated Remediation (PowerShell Script)Rollback<b>
 Run the following in PowerShell as an Administrator:
@@ -78,3 +81,5 @@ secedit /configure /db C:\Windows\security\local.sdb /cfg C:\rollback.cfg /areas
 ```
 
 <h2>5. Final Results</h2>
+<img src = "/WN11-UR-000010PASS.PNG">
+The Nessus scan shows that the vulnerability has been remediated. Now only user accounts that are in the Administrators or Remote Desktop Users will be able to remotely login to the system.
