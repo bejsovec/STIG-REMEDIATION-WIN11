@@ -49,12 +49,11 @@ Select the policy "Access this computer from the network"<br>
 2. Select any other users or groups and then click remove.<br>
 
 <br><b>Automated Remediation (PowerShell Script)Rollback</b><br>
-Run the following in PowerShell as an Administrator:
-
-
-Expected Result:
-
+Run the following in PowerShell as an Administrator. In Windows 22H2 and later this default value is 10 attempts and there is no lock out value in older verions. Changing to 10 will effectively change this back to the default in our Windows 11 22H2 VM.
+```
+Lockout threshold: 10
+```
 
 <h2>5. Final Results</h2>
 <img src = "/IMAGES/WN11-UR-000010PASS.PNG">
-The Nessus scan shows that the vulnerability has been remediated. Now only user accounts that are in the Administrators or Remote Desktop Users will be able to remotely login to the system.
+The Nessus scan shows that the vulnerability has been remediated. An account will become locked out for 10 minutes after 3 failed attempts to login.
