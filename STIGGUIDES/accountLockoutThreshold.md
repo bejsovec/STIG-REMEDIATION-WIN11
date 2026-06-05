@@ -55,5 +55,5 @@ Lockout threshold: 10
 ```
 
 <h2>5. Final Results</h2>
-<img src = "/IMAGES/WN11-UR-000010PASS.PNG">
+<img src = "/IMAGES/WN11-AC-000010PASS.PNG">
 The Nessus scan shows that the vulnerability has been remediated. An account will become locked out for 10 minutes after 3 failed attempts to login.
