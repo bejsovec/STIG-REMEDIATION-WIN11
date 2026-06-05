@@ -59,7 +59,7 @@ This table lists the identified vulernabilites by their STIG ID, a summary of th
 <tr>
 <td>WN11-AU-000500</td>
 <td>The Application event log size must be configured to 32768 KB or greater.</td>
-<td><a href="docs/TEST.md">ToDo</a></td>
+<td><a href="/STIGGUIDES/eventLogSize.md">Event Logs</a></td>
 </tr>
 
 <tr>
