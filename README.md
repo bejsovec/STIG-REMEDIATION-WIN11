@@ -65,7 +65,7 @@ This table lists the identified vulernabilites by their STIG ID, a summary of th
 <tr>
 <td>WN11-AU-000054</td>
 <td>The system must be configured to audit Logon/Logoff - Account Lockout failures.</td>
-<td><a href="docs/TEST.md">ToDo</a></td>
+<td><a href="STIGGUIDES/lockoutAudit.md">Lockout Audit</a></td>
 </tr>
 
 <tr>
