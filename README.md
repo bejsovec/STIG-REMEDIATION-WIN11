@@ -77,7 +77,7 @@ This table lists the identified vulernabilites by their STIG ID, a summary of th
 <tr>
 <td>WN11-AC-000035</td>
 <td>Passwords must, at a minimum, be 14 characters.</td>
-<td><a href="docs/TEST.md">ToDo</a></td>
+<td><a href="/STIGGUIDES/passwordMinimum.md">Minimum Password Length</a></td>
 </tr>
 
 <tr>
