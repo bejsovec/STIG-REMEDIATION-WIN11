@@ -1,5 +1,5 @@
 
-<h1>Event Log Size Remediation</h1>
+<h1>Account Lockout Threshold Remediation</h1>
 <b>STIG ID:</b> WN11-AC-000010<br>
 <b>Description:</b> The number of allowed bad logon attempts must be configured to three or less.
 
