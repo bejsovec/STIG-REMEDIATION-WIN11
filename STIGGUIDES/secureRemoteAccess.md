@@ -1,5 +1,5 @@
 
-<h1>Event Log Size Remediation</h1>
+<h1>Secure Remote Access Remediation</h1>
 <b>STIG ID:</b> WN11-UR-000010<br>
 <b>Description:</b> The 'Access this computer from the network' user right must only be assigned to the Administrators and Remote Desktop Users groups.
 
