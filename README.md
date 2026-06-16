@@ -96,7 +96,7 @@ This table lists the identified vulernabilites by their STIG ID, a summary of th
 <tr>
 <td>WN11-AC-000030</td>
 <td>The minimum password age must be configured to at least 1 day.</td>
-<td><a href="docs/TEST.md">ToDo</a></td>
+<td><a href="STIGGUIDES/minimumPasswordAge.md>Minimum Password Age</a></td>
 </tr>
 
 </table>
